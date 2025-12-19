@@ -1,0 +1,313 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Online | Dedy Nurcahya</title>
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #eef2f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #1e88e5;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #1e88e5;
+        }
+
+        .header p {
+            margin-top: 8px;
+            color: #666;
+        }
+
+        .lang-btn {
+            margin-top: 15px;
+        }
+
+        .lang-btn button {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 6px;
+            background: #1e88e5;
+            color: #fff;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .lang-btn button:hover {
+            background: #1565c0;
+        }
+
+        .section {
+            margin-top: 35px;
+        }
+
+        .section h2 {
+            color: #1e88e5;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background: #f9fbfd;
+            padding: 18px 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 5px solid #1e88e5;
+        }
+
+        .card span {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 6px 0;
+        }
+
+        .info i {
+            color: #1e88e5;
+            width: 20px;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .en {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .lang-btn, footer {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                border-radius: 0;
+            }
+        }
+    </style>
+
+    <script>
+        function showID() {
+            document.querySelector('.id').style.display = 'block';
+            document.querySelector('.en').style.display = 'none';
+        }
+
+        function showEN() {
+            document.querySelector('.id').style.display = 'none';
+            document.querySelector('.en').style.display = 'block';
+        }
+
+        function downloadPDF() {
+            window.print();
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Dedy Nurcahya</h1>
+        <p>Computer Engineering Student | Networking</p>
+
+        <div class="lang-btn">
+            <button onclick="showID()">Indonesia</button>
+            <button onclick="showEN()">English</button>
+            <button onclick="downloadPDF()">Download PDF</button>
+        </div>
+    </div>
+
+    <!-- ================= INDONESIA ================= -->
+    <div class="id">
+
+        <div class="section">
+            <h2>Profil Singkat</h2>
+            <p>
+                Saya merupakan mahasiswa Teknik Komputer yang memiliki minat
+                pada bidang jaringan dan teknologi komputer. Memiliki pengalaman
+                magang sebagai teknisi jaringan.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Data Pribadi</h2>
+            <div class="info">
+                <p><i class="fa-solid fa-user"></i> <b>Nama:</b> Dedy Nurcahya</p>
+                <p><i class="fa-solid fa-calendar"></i> <b>Umur:</b> 20 Tahun</p>
+                <p><i class="fa-solid fa-location-dot"></i> <b>TTL:</b> Karanganyar, 28 Agustus 2006</p>
+                <p><i class="fa-solid fa-graduation-cap"></i> <b>Status:</b> Mahasiswa</p>
+                <p><i class="fa-solid fa-envelope"></i> <b>Email:</b> dedychyo@email.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i> <b>WhatsApp:</b>
+                    <a href="https://wa.me/6287733627650" target="_blank">+62 877-3362-7650</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Pendidikan</h2>
+            <div class="card">
+                <b>Teknik Komputer</b><br>
+                SMK Negeri Jumantono<br>
+                <span>2021 – 2024</span>
+            </div>
+
+            <div class="card">
+                <b>D3 Teknik Komputer</b><br>
+                Universitas Duta Bangsa Surakarta<br>
+                <span>2024 – Sekarang</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Pengalaman Magang</h2>
+            <div class="card">
+                <b>Teknisi Jaringan</b><br>
+                PT Global Media Data Prima<br>
+                <span>Agustus 2025 – November 2025</span>
+                <ul>
+                    <li>Troubleshooting jaringan</li>
+                    <li>Instalasi & perbaikan fiber optik</li>
+                    <li>Bekerja sama dengan tim teknisi</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Keahlian</h2>
+            <ul>
+                <li>MikroTik</li>
+                <li>Instalasi Jaringan Wi-Fi</li>
+                <li>Troubleshooting Jaringan</li>
+                <li>Microsoft Word & Excel</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- ================= ENGLISH ================= -->
+    <div class="en">
+
+        <div class="section">
+            <h2>Profile Summary</h2>
+            <p>
+                I am a Computer Engineering student with a strong interest in
+                networking and computer technology. I have internship experience
+                as a Network Technician.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Personal Information</h2>
+            <div class="info">
+                <p><i class="fa-solid fa-user"></i> <b>Name:</b> Dedy Nurcahya</p>
+                <p><i class="fa-solid fa-calendar"></i> <b>Age:</b> 20 Years Old</p>
+                <p><i class="fa-solid fa-location-dot"></i> <b>Birth:</b> Karanganyar, August 28, 2006</p>
+                <p><i class="fa-solid fa-graduation-cap"></i> <b>Status:</b> Student</p>
+                <p><i class="fa-solid fa-envelope"></i> <b>Email:</b> dedychyo@email.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i> <b>WhatsApp:</b>
+                    <a href="https://wa.me/6287733627650" target="_blank">+62 877-3362-7650</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="card">
+                <b>Computer Engineering</b><br>
+                SMK Negeri Jumantono<br>
+                <span>2021 – 2024</span>
+            </div>
+
+            <div class="card">
+                <b>Diploma (D3) in Computer Engineering</b><br>
+                Duta Bangsa University Surakarta<br>
+                <span>2024 – Present</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Internship Experience</h2>
+            <div class="card">
+                <b>Network Technician Intern</b><br>
+                PT Global Media Data Prima<br>
+                <span>August 2025 – November 2025</span>
+                <ul>
+                    <li>Network troubleshooting</li>
+                    <li>Fiber optic installation & repair</li>
+                    <li>Team collaboration</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>MikroTik</li>
+                <li>Wi-Fi Network Installation</li>
+                <li>Network Troubleshooting</li>
+                <li>Microsoft Word & Excel</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 Dedy Nurcahya | CV Online
+    </footer>
+
+</div>
+
+</body>
+</html>
